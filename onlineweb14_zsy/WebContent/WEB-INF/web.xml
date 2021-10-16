@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<welcome-file-list>
+
+		<welcome-file>index.do</welcome-file>
+
+
+	</welcome-file-list>
+
+	<!-- 首页 -->
+	<servlet>
+		<servlet-name>indexAction</servlet-name>
+		<servlet-class>com.bwf.onlineweb.action.IndexAction</servlet-class>
+
+	</servlet>
+	<!-- 映射 -->
+	<servlet-mapping>
+		<servlet-name>indexAction</servlet-name>
+		<url-pattern>/index.do</url-pattern>
+
+	</servlet-mapping>
+
+
+
+	<!-- 课程详细 -->
+	<servlet>
+		<servlet-name>descAction</servlet-name>
+		<servlet-class>com.bwf.onlineweb.action.DescAction</servlet-class>
+
+	</servlet>
+	<!-- 映射 -->
+	<servlet-mapping>
+		<servlet-name>descAction</servlet-name>
+		<url-pattern>/desc.do</url-pattern>
+
+	</servlet-mapping>
+	
+	
+	
+	<!-- 课程搜索 -->
+	<servlet>
+		<servlet-name>searchAction</servlet-name>
+		<servlet-class>com.bwf.onlineweb.action.SearchAction</servlet-class>
+
+	</servlet>
+	<!-- 映射 -->
+	<servlet-mapping>
+		<servlet-name>searchAction</servlet-name>
+		<url-pattern>/search.do</url-pattern>
+
+	</servlet-mapping>
+	
+	
+	<!-- 注册页面 -->
+	<servlet>
+		<servlet-name>regUIAction</servlet-name>
+		<servlet-class>com.bwf.onlineweb.action.RegUIAction</servlet-class>
+
+	</servlet>
+	<!-- 映射 -->
+	<servlet-mapping>
+		<servlet-name>regUIAction</servlet-name>
+		<url-pattern>/regUI.do</url-pattern>
+
+	</servlet-mapping>
+</web-app>
